@@ -22,7 +22,7 @@ router.post('/post/save',(req,res)=>{
 });
 
 //Retrive Posts(GET)
-router.get('https://mern-backend-gd2b.onrender.com/posts',(req,res)=>{
+router.get('/posts',(req,res)=>{
     Posts.find().exec((err,posts)=>{
         if(err){
             returen.res.status(400).json({
